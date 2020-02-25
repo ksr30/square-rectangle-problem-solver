@@ -12,7 +12,7 @@ object SecondSolution {
 
   class Square extends Rectangle {
     override def area(height: Double, width: Double): Double = {
-      if (width == 0) height else area(height + 1, width - 1)
+      if (width == 0) height else area(height + height, width - 1)
     }
   }
 
